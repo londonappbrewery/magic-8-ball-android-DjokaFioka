@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 Random randomNumberGenerator = new Random();
-                int number = randomNumberGenerator.nextInt(5);
+                int number = randomNumberGenerator.nextInt(ballArray.length);
 
                 ballDisplay.setImageResource(ballArray[number]);
             }
